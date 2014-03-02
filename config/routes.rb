@@ -1,4 +1,18 @@
 Bookadvicer::Application.routes.draw do
+  resources :books
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+#  get "static_pages/Feedback"
+#  get "static_pages/Help"
+#  get "static_pages/about"
+#  get "static_pages/home"
+
+  root 'books#index'
+  match '/help',    to: 'static_pages#Help',    via: 'get'
+  match '/about',   to: 'static_pages#about',   via: 'get'
+  match '/feedback', to: 'books#new', via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

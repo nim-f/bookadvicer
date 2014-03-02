@@ -1,0 +1,52 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @book.title %>, <%= @book.author %></h1>
+<div class="description"><%= @book.summary %></divi>
+<div class="genre">Жанр: <%= @book.genre %>, <%= @book.genre_2 %>, <%= @book.genre_3 %></div>
+<%= link_to 'Читать', @book.link, :class => "read" %>
+<%= link_to 'Еще совет', @books.sample, :class=>"more" %>
+
+<!--
+<p>
+  <strong>Author:</strong>
+  <%= @book.author %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @book.genre %>
+</p>
+
+<p>
+  <strong>Genre 2:</strong>
+  <%= @book.genre_2 %>
+</p>
+
+<p>
+  <strong>Genre 3:</strong>
+  <%= @book.genre_3 %>
+</p>
+
+<p>
+  <strong>Date of publication:</strong>
+  <%= @book.date_of_publication %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @book.link %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @book.summary %>
+</p>
+
+<p>
+  <strong>Buy link:</strong>
+  <%= @book.buy_link %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
+-->
