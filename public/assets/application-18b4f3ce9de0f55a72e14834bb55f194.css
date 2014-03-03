@@ -1,0 +1,263 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+*= require_self
+
+*= require custom
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px; }
+
+a {
+  color: #000; }
+  a:visited {
+    color: #666; }
+  a:hover {
+    color: #fff;
+    background-color: #000; }
+
+div.field, div.actions {
+  margin-bottom: 10px; }
+
+#notice {
+  color: green; }
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table; }
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0; }
+  #error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff; }
+  #error_explanation ul li {
+    font-size: 12px;
+    list-style: square; }
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif:400,700&subset=latin,cyrillic,cyrillic-ext);
+body {
+  background: url(images/site-bg4.jpg) left top repeat;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif";
+  line-height: normal; }
+
+/*
+@font-face {
+	font-family: 'Georgia';
+		src: url('/app/assets/fonts/944555.eot');
+		src: url(/'app/assets/fonts/944555.eot?#iefix') format('embedded-opentype'),
+				 url('/app/assets/fonts/944555.woff') format('woff'),
+				 url(/'app/assets/fonts/944555.ttf') format('truetype'),
+				 url('/app/assets/fonts/944555.svg#944555') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}
+*/
+a, a:hover, a:visited, a:active, a:link {
+  color: #fc6419;
+  background: transparent; }
+
+.header {
+  border-top: 18px solid #fc722d; }
+
+#logo {
+  width: 956px;
+  margin: 0 auto;
+  padding-top: 50px;
+  overflow: hidden; }
+
+#logo a {
+  float: left;
+  display: block; }
+
+a.bookadv {
+  float: left;
+  font-size: 80px;
+  color: #fc6419;
+  padding: 0px 20px;
+  line-height: normal;
+  text-decoration: none; }
+
+.content {
+  width: 818px;
+  margin: 0 auto;
+  padding-left: 138px; }
+
+.content h1 {
+  font-size: 40px;
+  font-weight: normal; }
+
+.description {
+  font-size: 20px; }
+
+.genre {
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.content a {
+  font-size: 30px; }
+
+a.contact {
+  position: fixed;
+  bottom: 0;
+  right: 100px;
+  background: #fc6419;
+  color: #fff;
+  display: block;
+  padding: 10px 40px;
+  border-radius: 10px 10px 0 0;
+  text-decoration: none;
+  font-size: 20px; }
+
+.footer {
+  min-height: 100px; }
+
+.idea {
+  font-size: 40px;
+  padding-left: 400px; }
+
+.main {
+  padding-top: 80px; }
+
+.recommends {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.recommends li {
+  padding: 4px 0;
+  overflow: hidden; }
+
+.field span {
+  display: inline-block;
+  width: 170px;
+  float: left; }
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 3px; }
+
+input[type="submit"], a.more {
+  background: #fc6419;
+  color: #fff;
+  border: 1px solid #fc6419;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -ms-border-radius: 6px;
+  padding: 5px;
+  font-family: Georgia;
+  font-size: 20px;
+  margin-top: 10px;
+  cursor: pointer; }
+
+textarea {
+  border: 1px solid #ccc;
+  padding: 3px;
+  width: 398px; }
+
+input.short {
+  width: 125px; }
+
+input.long {
+  width: 261px; }
+
+.mail_button {
+  margin-left: 170px; }
+
+.orange {
+  color: #fc6419; }
+
+.more input, a.more {
+  text-decoration: none;
+  font-size: 28px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.more, .read {
+  float: left;
+  margin: 0;
+  margin-right: 30px;
+  display: block; }
+
+.read {
+  margin-top: 15px; }
+
+.float-left {
+  float: left; }
+
+.soc {
+  float: right;
+  margin-top: -40px; }
+
+.soc a {
+  display: block;
+  width: 50px;
+  height: 41px;
+  float: left;
+  margin: 10px;
+  background: url(images/social.png) left top no-repeat; }
+
+.soc a.fb {
+  background-position: -60px 0; }
+
+.soc a.vk {
+  background-position: -120px 0; }
+
+.soc a.twitter:hover {
+  background-position: 0px -52px; }
+
+.soc a.fb:hover {
+  background-position: -60px -52px; }
+
+.soc a.vk:hover {
+  background-position: -120px -52px; }
+
+.soc_buttons {
+  overflow: hidden;
+  float: right;
+  padding-top: 22px; }
+
+.soc_buttons > div {
+  padding-right: 20px; }
+
+p {
+  font-family: "Noto Serif"; }
