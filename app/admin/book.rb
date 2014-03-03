@@ -15,7 +15,7 @@ ActiveAdmin.register Book do
   # end
   controller do
     def permitted_params
-      params.permit book: [:title, :autor, :genre, :genre_2,:genre_3, :date_of_publication, :link, :summary, :buy_link, :active]
+      params.permit book: [:title, :author, :genre, :genre_2,:genre_3, :date_of_publication, :link, :summary, :buy_link, :active]
     end  
   end
 end
