@@ -1,4 +1,9 @@
 <div class="header">
-  <div id="logo"><%= link_to image_tag("logo.png", alt: "Bookadvicer"), '' %><%= link_to "Bookadvicer", root_path, :class => "bookadv"  %></div>
-  <div class="soc"></div>
+  <div id="logo"><div class="float-left"><%= link_to image_tag("logo.png", alt: "Bookadvicer"), '' %><%= link_to "Bookadvicer", root_path, :class => "bookadv"  %></div>
+  <div class="soc">
+    <%= link_to "&nbsp;", "https://twitter.com/BookAdvicer", :class => "twitter", :target => "_blank"  %>
+    <%= link_to "&nbsp;", "http://www.facebook.com/pages/Bookadvicer/154064068091070", :class => "fb", :target => "_blank"  %>
+    <%= link_to "&nbsp;", "http://vk.com/bookadvicer", :class => "vk", :target => "_blank"  %>
+  </div>
+  </div>
 </div>

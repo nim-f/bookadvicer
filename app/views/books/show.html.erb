@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= @book.title %>, <%= @book.author %></h1>
+<h1>&laquo;<%= @book.title %>&raquo;, <%= @book.author %></h1>
 <div class="description"><%= @book.summary %></divi>
 <div class="genre">Жанр: <%= @book.genre %>
 <% if @book.genre_2.nil? then %>
@@ -10,7 +10,7 @@
 , <%= @book.genre_3 %>
 <% end %>
 </div>
-<%= link_to 'Читать', @book.link, :class => "read" %>
+<%= link_to 'Читать', @book.link, target: "_blank", :class => "read" %>
 <%= link_to 'Еще совет', @books.sample, :class=>"more" %>
 
 <!--

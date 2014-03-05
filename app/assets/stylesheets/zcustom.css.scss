@@ -191,6 +191,8 @@ input.long{
 	height: 41px;
 	float: left;
 	margin: 10px;
+        text-indent: -999px;
+        overflow: hidden;
 	background: url(images/social.png) left top no-repeat;
 }
 
