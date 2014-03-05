@@ -16,6 +16,16 @@ ActiveAdmin.register Book do
   controller do
     def permitted_params
       params.permit book: [:title, :author, :genre, :genre_2,:genre_3, :date_of_publication, :link, :summary, :buy_link, :active]
-    end  
+    end 
+    def update
+      update! do |format|
+        format.html { redirect_to admin_books_path }
+      end
+    end
+    def create
+      create! do |format|
+        format.html { redirect_to admin_books_path }
+      end
+    end 
   end
 end
