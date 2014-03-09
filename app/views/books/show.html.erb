@@ -11,8 +11,17 @@
 <% end %>
 </div>
 <%= link_to 'Читать', @book.link, target: "_blank", :class => "read" %>
+
+
 <%= link_to 'Еще совет', @books.sample, :class=>"more" %>
 
+
+<div class="soc_buttons">
+<span class='st_facebook_large' displayText='Facebook'></span>
+<span class='st_twitter_large' displayText='Tweet'></span>
+<span class='st_vkontakte_large' displayText='Vkontakte'></span>
+<span class='st_livejournal_large' displayText='LiveJournal'></span>
+</div>
 <!--
 <p>
   <strong>Author:</strong>
