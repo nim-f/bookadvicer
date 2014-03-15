@@ -1,3 +1,4 @@
+<% provide(:title, "#{@book.title}, #{@book.author}") %>
 <p id="notice"><%= notice %></p>
 
 <h1>&laquo;<%= @book.title %>&raquo;, <%= @book.author %></h1>
@@ -17,10 +18,13 @@
 
 
 <div class="soc_buttons">
-<span class='st_facebook_large' displayText='Facebook'></span>
-<span class='st_twitter_large' displayText='Tweet'></span>
-<span class='st_vkontakte_large' displayText='Vkontakte'></span>
-<span class='st_livejournal_large' displayText='LiveJournal'></span>
+<script type="text/javascript" src="//yandex.st/share/share.js"
+charset="utf-8"></script>
+<div style="float: right;" class="yashare-auto-init" data-yashareL10n="ru"
+ data-yashareQuickServices="vkontakte,facebook,twitter,gplus" data-yashareTheme="counter"
+
+></div> 
+<span style="float: right; padding: 5px 10px;">Поделиться:</span>
 </div>
 <!--
 <p>
